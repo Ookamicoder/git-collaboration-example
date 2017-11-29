@@ -27,8 +27,7 @@ public class Calculator {
 	
 	public int square(int number) {
 		int result = number*number;
-		return result;
-		
+		return result;		
 	}
 	
 	public int cube(int number) {
