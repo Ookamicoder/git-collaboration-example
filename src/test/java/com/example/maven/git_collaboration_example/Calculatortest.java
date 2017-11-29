@@ -46,7 +46,7 @@ public class Calculatortest {
 			int result = 0;
 			result = firstNumber * secondNumber;
 			LOG.info("Testing the mulitiply add with" + firstNumber + " and " + secondNumber);
-			assertEquals(c.mulitiply(firstNumber, secondNumber), result);
+			assertEquals(c.multiply(firstNumber, secondNumber), result);
 		}
 	}
 	
