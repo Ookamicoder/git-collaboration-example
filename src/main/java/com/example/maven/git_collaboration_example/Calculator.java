@@ -32,5 +32,9 @@ public class Calculator {
 	public int cube(int number) {
 		return number*number*number;
 	}
+	
+	public int areaOfCircle(int base,int height) {
+		return (int) ((base*height)*Math.PI);
+	}
 
 }
