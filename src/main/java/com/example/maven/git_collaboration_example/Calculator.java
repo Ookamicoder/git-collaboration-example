@@ -37,5 +37,16 @@ public class Calculator {
 	public int areaOfCircle(int base,int height) {
 		return (int) ((base*height)*Math.PI);
 	}
+	
+	//methods for MadBar to add test cases for
+	
+	//Till exempel 0.75*584930583 = 75 % av 584930583
+	public double percent(double percentageToCalculate,double number) { 
+		return percentageToCalculate*number;
+	}
+	
+	public double squareRoot(double numberToRoot) {
+		return Math.sqrt(numberToRoot);
+	}
 
 }
