@@ -39,7 +39,7 @@ public class Calculatortest {
 	}
 	
 	@Test
-	public void testMulitiplyMethod() {
+	public void testMultiplyMethod() {
 		for(int i = 0; i <10 ;i++) {
 			int firstNumber = r.nextInt(100);
 			int secondNumber = r.nextInt(100);
@@ -64,5 +64,26 @@ public class Calculatortest {
 			//assertEquals(c.divide(firstNumber, secondNumber), result);			
 		}
 	}
-
+	
+	@Test
+	public void testSquareMethod() {
+		for(int i = 0; i <10 ;i++) {
+			int firstNumber = r.nextInt(100);
+			int result = 0;
+			result = firstNumber * firstNumber;
+			LOG.info("Testing the square add with" + firstNumber + " and " + firstNumber);
+			assertEquals(c.multiply(firstNumber, firstNumber), result);
+		}
+	}
+	
+	@Test
+	public void testCubeMethod() {
+		for(int i = 0; i <10 ;i++) {
+			int firstNumber = r.nextInt(100);
+			int result = 0;
+			result = firstNumber * firstNumber * firstNumber;
+			LOG.info("Testing the cube add with" + firstNumber + " and " + firstNumber + " and " + firstNumber);
+			assertEquals(c.multiply(firstNumber, firstNumber), result);
+		}
+	}
 }
