@@ -72,7 +72,7 @@ public class Calculatortest {
 			int result = 0;
 			result = firstNumber * firstNumber;
 			LOG.info("Testing the square add with" + firstNumber + " and " + firstNumber);
-			assertEquals(c.multiply(firstNumber, firstNumber), result);
+			assertEquals(c.square(firstNumber), result);
 		}
 	}
 	
@@ -82,8 +82,19 @@ public class Calculatortest {
 			int firstNumber = r.nextInt(100);
 			int result = 0;
 			result = firstNumber * firstNumber * firstNumber;
-			LOG.info("Testing the cube add with" + firstNumber + " and " + firstNumber + " and " + firstNumber);
-			assertEquals(c.multiply(firstNumber, firstNumber), result);
+			LOG.info("Testing the cube add with" + firstNumber);
+			assertEquals(c.cube(firstNumber), result);
+		}
+	}
+	@Test
+	public void testareaOfCircleMethod() {
+		for(int i = 0; i <10 ;i++) {
+			int base = r.nextInt(100);
+			int height = r.nextInt(100);
+			int result = 0;
+			result =(int) ((base*height)*Math.PI);
+			LOG.info("Testing the areaOfCircle add with" + base + " and " + height);
+			assertEquals(c.areaOfCircle(base, height), result);
 		}
 	}
 }
